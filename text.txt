@@ -1,0 +1,14 @@
+INTERNET IMAGE
+IMG1 ----- Woman Pressing her laptop -------- https://cdn.rareblocks.xyz/collection/celebration/images/content/3/girl-working-on-laptop.jpg
+
+
+
+<section class="relative py-10 bg-gray-900 sm:py-16 lg:py-24">
+    <div class="absolute inset-0">
+        <img class="object-cover w-full h-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/signin/2/man-eating-noodles.jpg" alt="" />
+    </div>
+    <div class="absolute inset-0 bg-gray-900/20"></div>
+
+
+</section>
+
