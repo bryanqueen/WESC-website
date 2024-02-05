@@ -6,6 +6,7 @@ function Coverage(props) {
     return (
         <div>
             <Navbar/>
+            Coverage
         </div>
     );
 }

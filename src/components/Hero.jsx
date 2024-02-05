@@ -13,7 +13,7 @@ const NavItems = [
     {name: 'About', path: '/about-us'},
     {name: 'Our Services', path: '/services'},
     {name: 'Our Coverage', path: '/coverage'},
-    {name: 'Scholarships', path: '/scholarships'},
+    {name: 'Programmes', path: '/programmes'},
     {name: 'Jobs', path: '/jobs'}
 ]
 

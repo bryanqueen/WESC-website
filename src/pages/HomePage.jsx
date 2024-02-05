@@ -7,6 +7,7 @@ import OurMarket from "../components/OurMarket";
 import Testimonial from "../components/Testimonial";
 import UniquePrep from "../components/UniquePrep";
 import Footer from "../components/Footer";
+import BlogsOverview from "../components/BlogsOverview";
 
 function HomePage(props) {
     return (
@@ -17,6 +18,7 @@ function HomePage(props) {
             <QuickForm/>
             <OurMarket/>
             <Testimonial/>
+            <BlogsOverview/>
             <UniquePrep/>
             <Footer/>
         </div>

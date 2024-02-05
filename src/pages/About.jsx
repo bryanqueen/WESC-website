@@ -15,6 +15,12 @@ function About(props) {
 
         'Our approaches are rooted in sustainable mission fulfillment, evidence-based decision making, and goal-oriented results.'
     ]
+
+    const Teams = [
+        {name: 'Olawale Okupe', position: '', image: ''},
+        {name: '', position: '', image: ''},
+        {name: '', position: '', image: ''}
+    ]
     return (
         <div className=''>
             <Navbar/>
@@ -162,14 +168,14 @@ function About(props) {
             <p class="max-w-md mx-auto mt-4 text-base leading-relaxed text-gray-600">At WESC, we are blessed with some of the most beautiful beings on earth. These individuals provide you with all the necessary up to date resources and assistant to help you find the right university, share with you available scholarships' opportunities and complete all the tasks required to ensure that your transition process is stress-free.</p>
         </div>
 
-        <div class="grid grid-cols-2 mt-8 text-center sm:mt-16 lg:mt-20 sm:grid-cols-4 gap-y-8 lg:grid-cols-9 gap-x-0">
+        <div class="grid grid-cols-2 mt-8 text-center sm:mt-16 lg:mt-20  gap-y-8 lg:grid-cols-3 gap-x-0 items-center">
             <div>
                 <img class="object-cover mx-auto rounded-lg w-28 h-28" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-1.jpg" alt="" />
                 <p class="mt-8 text-lg font-semibold leading-tight text-black">Jenny Wilson</p>
                 <p class="mt-1 text-base leading-tight text-gray-600">Founder</p>
             </div>
 
-            <div class="hidden lg:block"></div>
+            {/* <div class="hidden lg:block"></div> */}
 
             <div>
                 <img class="object-cover mx-auto rounded-lg w-28 h-28" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-2.jpg" alt="" />
@@ -177,7 +183,7 @@ function About(props) {
                 <p class="mt-1 text-base leading-tight text-gray-600">CTO</p>
             </div>
 
-            <div class="hidden lg:block"></div>
+            {/* <div class="hidden lg:block"></div> */}
 
             <div>
                 <img class="object-cover mx-auto rounded-lg w-28 h-28" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-3.jpg" alt="" />
@@ -185,53 +191,9 @@ function About(props) {
                 <p class="mt-1 text-base leading-tight text-gray-600">CMO</p>
             </div>
 
-            <div class="hidden lg:block"></div>
 
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-4.jpg" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Arlene McCoy</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">Senior Developer</p>
-            </div>
-
-            <div class="hidden lg:block"></div>
-
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-5.jpg" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Brooklyn Simmons</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">Product Designer</p>
-            </div>
-
-            <div class="hidden lg:block"></div>
-
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-6.jpg" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Jerome Bell</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">Customer Success</p>
-            </div>
-
-            <div class="hidden lg:block"></div>
-
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-7.jpg" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Dianne Russell</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">Front-end Developer</p>
-            </div>
-
-            <div class="hidden lg:block"></div>
-
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-8.jpg" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Kristin Watson</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">H.R</p>
-            </div>
-
-            <div class="hidden lg:block"></div>
-
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-9.jpg" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Eleanor Pena</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">UI Designer</p>
-            </div>
+           
+           
         </div>
     </div>
 </section>
