@@ -4,6 +4,15 @@ import Footer from '../components/Footer';
 import useDocumentTitle from '@rehooks/document-title';
 import Img1 from '../assets/img17.jpg';
 import Img2 from '../assets/img5.jpg';
+import Olawale from '../assets/Teams/Olawale.jpg';
+import Ese from '../assets/Teams/Ese.jpg';
+import Charles from '../assets/Teams/Charles.jpg';
+import Daniel from '../assets/Teams/Daniel.jpg';
+import Jesupelumi from '../assets/Teams/Jesupelumi.jpg';
+import Joseph from '../assets/Teams/Joseph.jpeg';
+import Victoria from '../assets/Teams/Victoria.jpg';
+import Precious from '../assets/Teams/Precious.jpg'
+
 
 
 function About(props) {
@@ -17,9 +26,14 @@ function About(props) {
     ]
 
     const Teams = [
-        {name: 'Olawale Okupe', position: '', image: ''},
-        {name: '', position: '', image: ''},
-        {name: '', position: '', image: ''}
+        {name: 'Olawale Okupe', position: 'CEO', image: Olawale},
+        {name: 'Ese Sona', position: 'Chief Admission Officer', image: Ese},
+        {name: 'Oluwayomi Victoria Aduragbemi', position: 'Recruitment Officer', image: Victoria},
+        {name: 'Jesupelumi Ogunmola', position: 'Customer Experience Officer', image: Jesupelumi},
+        {name: 'Aderibigbe Charles ', position: 'Recruitment Officer', image: Charles},
+        {name: 'Precious K. Enubuzor', position: 'Recruitment Officer', image: Precious},
+        {name: 'Imhanbor Joseph', position: '', image: Joseph},
+        {name: 'Umeh Daniel', position: 'Software Engineer', image: Daniel}
     ]
     return (
         <div className=''>
@@ -168,31 +182,15 @@ function About(props) {
             <p class="max-w-md mx-auto mt-4 text-base leading-relaxed text-gray-600">At WESC, we are blessed with some of the most beautiful beings on earth. These individuals provide you with all the necessary up to date resources and assistant to help you find the right university, share with you available scholarships' opportunities and complete all the tasks required to ensure that your transition process is stress-free.</p>
         </div>
 
-        <div class="grid grid-cols-2 mt-8 text-center sm:mt-16 lg:mt-20  gap-y-8 lg:grid-cols-3 gap-x-0 items-center">
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-1.jpg" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Jenny Wilson</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">Founder</p>
+        <div class="grid grid-cols-1.5 md:grid-cols-2 mt-8  justify-center sm:mt-16 lg:mt-20  gap-y-8 lg:grid-cols-3 gap-x-4 items-center">
+            {Teams.map((member, idx) => (
+            <div className='items-center justify-center flex flex-col gap-3' key={idx}>
+                <img class="object-cover rounded-lg w-36 h-36" src={member.image} alt="Team Member" />
+                <p class="text-lg font-semibold leading-tight text-black">{member.name}</p>
+                <p class=" text-base leading-tight text-gray-600">{member.position}</p>
             </div>
+            ))}
 
-            {/* <div class="hidden lg:block"></div> */}
-
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-2.jpg" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Darrell Steward</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">CTO</p>
-            </div>
-
-            {/* <div class="hidden lg:block"></div> */}
-
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-3.jpg" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Bessie Cooper</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">CMO</p>
-            </div>
-
-
-           
            
         </div>
     </div>
