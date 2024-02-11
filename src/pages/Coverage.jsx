@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
-import useDocumentTitle from '@rehooks/document-title'
+import useDocumentTitle from '@rehooks/document-title';
+import { Outlet } from "react-router-dom";
 
 function Coverage(props) {
     useDocumentTitle('Our Coverage')
@@ -7,6 +8,7 @@ function Coverage(props) {
         <div>
             <Navbar/>
             Coverage
+            <Outlet/>
         </div>
     );
 }

@@ -6,7 +6,10 @@ import Coverage from './pages/Coverage';
 import Jobs from './pages/Jobs';
 import Scholarships from './pages/Programmes';
 import Services from './pages/Services';
-import Canada from './pages/countries/Canada'
+import Canada from './pages/countries/Canada';
+import France from './pages/countries/France';
+import NewZealand from './pages/countries/NewZealand';
+import UK from './pages/countries/UK';
 
 function App() {
 
@@ -17,8 +20,11 @@ function App() {
         <Route index element={<HomePage/>}/>
         <Route path='/about-us' element={<About/>}/>
         <Route path='/blogs' element={<Blogs/>}/>
-        <Route path='/coverage/' element={<Coverage/>}>
+        <Route path='/coverage' element={<Coverage/>}>
           <Route path='canada' element={<Canada/>}/>
+          <Route path='france' element={<France/>}/>
+          <Route path='new-zealand' element={<NewZealand/>}/>
+          <Route path='uk' element={<UK/>}/>
         </Route>
         <Route path='/jobs' element={<Jobs/>}/>
         <Route path='/programmes' element={<Scholarships/>}/>

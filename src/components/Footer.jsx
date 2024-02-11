@@ -46,8 +46,11 @@ function Footer(props) {
     <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
       <div className="mx-auto max-w-sm lg:max-w-none">
         <p className="mt-4 text-center text-secondary lg:text-left lg:text-lg">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium natus quod eveniet
-          aut perferendis distinctio iusto repudiandae, provident velit earum?
+        Do you need assistance on your study/ work / Tourist Visa/ medical? WESC is here to help. We offer you over 12 years of immigration expertise. Contact WESC for your VISA/Immigration Assistance
+        </p>
+
+        <p className="mt-4 text-md text-center text-orange font-semibold lg:text-left lg:text-lg">
+        +2348025631112,<br /> +234 811 188 2608 (WhatsApp)
         </p>
 
         <div className="mt-6 flex justify-center gap-4 lg:justify-start">
@@ -103,9 +106,13 @@ function Footer(props) {
         </div>
       </div>
 
+      <div className="text-center lg:text-left">
+      <strong className="font-lg text-secondary"> Our Services at a Glance </strong>
+      </div>
+
       <div className="text-center  lg:text-left">
         <div>
-          <strong className="font-lg text-secondary"> Our Services at a Glance </strong>
+          <strong className="font-lg text-secondary">Do you have a Letter of Acceptance from a  college or university and you need help on your Visa?  Give us a call or send us a mail. </strong>
 
           <ul className="mt-6 space-y-1">
             {Services.map((service, idx) => (
