@@ -40,7 +40,7 @@ function Hero() {
     const currentData = data[currentIndex]
     // console.log(typeof(currentData))
     return (
-        <section className="relative  py-10 overflow-hidden bg-primary sm:py-16 lg:py-24 xl:py-32 min-h-90vh">
+        <section className="relative  py-10 overflow-hidden bg-primary sm:py-16 lg:py-24 xl:py-32 min-h-screen">
     <div className="absolute inset-0 ">
         <img className="object-cover lg:object-contain w-full h-full md:object-left md:scale-150 md:origin-top-left" src={currentData.img} alt="" />
     </div>
