@@ -42,7 +42,7 @@ function Hero() {
     return (
         <section className="relative  py-10 overflow-hidden bg-primary sm:py-16 lg:py-24 xl:py-32 min-h-screen">
     <div className="absolute inset-0 ">
-        <img className="object-cover  lg:object-contain w-full h-full md:object-left md:scale-150 md:origin-top-left" src={currentData.img} alt="" />
+        <img className="object-cover lg:object-contain w-full h-full md:object-left md:scale-150 md:origin-top-left" src={currentData.img} alt="" />
     </div>
 
     <div className="absolute inset-0 hidden bg-gradient-to-l md:block from-transparent to-primary"></div>
@@ -68,9 +68,9 @@ function Hero() {
             <div className={`md:hidden p-2 rounded-full bg-secondary`} onClick={() => setIsToggleOpen(!isToggleOpen)}>
                 {isToggleOpen ? <BiX className='h-6 w-6 text-primary'/> : <HiMenuAlt1 className='h-6 w-6 text-primary'/>}
             </div>
-            <ul className={`absolute top-0 left-0 z-[-1] h-screen w-full justify-center overflow-hidden  overflow-y-auto overscroll-contain bg-secondary/60 px-8 flex flex-col gap-4 font-medium transition-[opacity,visibility] duration-300 ${isToggleOpen ? 'visible backdrop-blur-sm opacity-100' : 'invisible opacity-0'}`}>
+            <ul className={`absolute min-h-screen top-0 left-0 z-[-1] w-full justify-center overflow-hidden  overflow-y-auto overscroll-contain bg-primary px-8 flex flex-col gap-4 font-medium transition-[opacity,visibility] duration-300 ${isToggleOpen ? 'visible backdrop-blur-sm opacity-100' : 'invisible opacity-0'}`}>
                 {NavItems.map((item) => (
-                    <li className='text-2xl text-primary hover:text-orange'>
+                    <li className='text-2xl text-secondary hover:text-orange'>
                         <a href={item.path}>{item.name}</a>
                     </li>
                 ))}

@@ -42,14 +42,14 @@ function Navbar(props) {
             <div className={`md:hidden block  p-2 rounded-full bg-secondary ${isToggleOpen ? 'visible opacity-100' : ''}`} onClick={() => setIsToggleOpen(!isToggleOpen)}>
                 {isToggleOpen ? <BiX className='h-6 w-6 text-primary'/> : <HiMenuAlt1 className='h-6 w-6 text-primary'/> }
             </div>
-        <ul className={`absolute left-0 top-0 w-full min-h-screen justify-center overflow-hidden  overflow-y-auto overscroll-contain bg-secondary/60 flex flex-col gap-4 px-8  font-medium transition-[opacity,visibility] duration-300 ${isToggleOpen ? 'visible opacity-100 backdrop-blur-sm ' : 'invisible opacity-0'}`}>
+        <ul className={`absolute left-0 top-0 w-full min-h-screen justify-center overflow-hidden  overflow-y-auto overscroll-contain bg-primary flex flex-col gap-4 px-8  font-medium transition-[opacity,visibility] duration-300 ${isToggleOpen ? 'visible opacity-100 backdrop-blur-sm ' : 'invisible opacity-0'}`}>
             <div className='items-end flex'>
-                <div className={`md:hidden flex justify-start p-2 w-10 rounded-full bg-secondary ${isToggleOpen ? 'visible opacity-100' : ''}`} onClick={() => setIsToggleOpen(!isToggleOpen)}>
+                <div className={`absolute left-[320px] top-4 md:hidden flex justify-start p-2 w-10 rounded-full bg-secondary ${isToggleOpen ? 'visible opacity-100' : ''}`} onClick={() => setIsToggleOpen(!isToggleOpen)}>
                 {isToggleOpen ? <BiX className='h-6 w-6 text-primary'/> : <HiMenuAlt1 className='h-6 w-6 text-primary'/> }
                 </div>
             </div>
                 {NavItems.map((item, idx) => (
-                    <li key={idx} className='text-2xl text-primary hover:text-orange '>
+                    <li key={idx} className='text-2xl text-secondary hover:text-orange '>
                         <a href={item.path}>{item.name}</a>
                     </li>
                 ))}
