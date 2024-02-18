@@ -1,7 +1,7 @@
 import React from 'react';
 import Information from '../../components/Information';
 import Footer from '../../components/Footer';
-import Img1 from '../../assets/SideAttractions/UK1.jpg';
+import Img1 from '../../assets/SideAttractions/Uk1.jpg';
 import Img2 from '../../assets/SideAttractions/UK2.jpg';
 
 const QuickFacts = [
