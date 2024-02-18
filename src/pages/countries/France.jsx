@@ -2,7 +2,7 @@ import React from 'react';
 import Information from '../../components/Information';
 import Footer from '../../components/Footer';
 import Img1 from '../../assets/SideAttractions/France1.jpg';
-import Img2 from '../assets/SideAttractions/France2.jpg';
+import Img2 from '../../assets/SideAttractions/France2.jpg';
 const QuickFacts = [
     'France is a world-leader with a strong economy',
     'France is home to leading international corporations: Airbus, Total, Orange, LVMH, L’Oréal, Danone',
