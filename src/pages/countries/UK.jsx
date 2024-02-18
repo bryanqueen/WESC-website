@@ -1,6 +1,8 @@
 import React from 'react';
 import Information from '../../components/Information';
 import Footer from '../../components/Footer';
+import Img1 from '../../assets/SideAttractions/UK1.jpg';
+import Img2 from '../../assets/SideAttractions/UK2.jpg';
 
 const QuickFacts = [
     'High Quality Education',
@@ -18,7 +20,7 @@ const QuickFacts = [
 const country = 'UNITED KINGDOM'
 
 function UK(props) {
-    const largeContent = <>`
+    const largeContent = <>
         <div class='flex gap-6 py-4 flex-col lg:flex-row lg:items-center'>
         <div class=''>
             <h2 class='text-lg md:text-2xl font-medium'>WHY {country}?</h2>
@@ -27,10 +29,10 @@ function UK(props) {
             </p>
             {/* <!-- Other paragraphs --> */}
         </div>
-        <img src='' alt="France" className='object-contain lg:max-w-lg rounded-lg' />
+        <img src={Img1} alt="France" className='object-contain lg:max-w-lg rounded-lg' />
     </div>
 <div class='flex gap-6 flex-col-reverse lg:flex-row items-start'>
-    <img src='' alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
+    <img src={Img2} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
     <div>
         <h2 class='text-lg md:text-2xl font-medium'>UK SYSTEM OF EDUCATION</h2>
         <p class='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
@@ -100,7 +102,7 @@ function UK(props) {
         </div>
     </div>
 </section>
-    `</>
+    </>
     return (
         <div>
             <Information content={largeContent}/>

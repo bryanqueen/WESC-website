@@ -1,6 +1,8 @@
 import React from 'react';
 import Information from '../../components/Information';
 import Footer from '../../components/Footer';
+import Img1 from '../../assets/SideAttractions/NZealand1.jpg';
+import Img2 from '../../assets/SideAttractions/NZealand2.jpg';
 
 const QuickFacts = [
     'New Zealand is one of the safest countries in the world',
@@ -19,7 +21,7 @@ const country = 'NEW ZEALAND';
 
 function NewZealand(props) {
 
-    const largeContent = <>`
+    const largeContent = <>
           <div class='flex gap-6 py-4 flex-col lg:flex-row lg:items-center'>
         <div class=''>
             <h2 class='text-lg md:text-2xl font-medium'>WHY {country}?</h2>
@@ -30,10 +32,10 @@ At every study level, New Zealand can give you a high-quality education that wil
             </p>
             {/* <!-- Other paragraphs --> */}
         </div>
-        <img src='' alt="France" className='object-contain lg:max-w-lg rounded-lg' />
+        <img src={Img1} alt="France" className='object-contain lg:max-w-lg rounded-lg' />
     </div>
 <div class='flex gap-6 flex-col-reverse lg:flex-row items-start'>
-    <img src='' alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
+    <img src={Img2} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
     <div>
         <h2 class='text-lg md:text-2xl font-medium'>{country} SYSTEM OF EDUCATION</h2>
         <p class='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
@@ -86,7 +88,7 @@ At every study level, New Zealand can give you a high-quality education that wil
         </div>
     </div>
 </section>
-    `</>
+    </>
 
     return (
         <div>

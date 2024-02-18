@@ -1,6 +1,8 @@
 import React from 'react';
 import Information from '../../components/Information';
 import Footer from '../../components/Footer';
+import Img1 from '../../assets/SideAttractions/Canada1.jpg';
+import Img2 from '../../assets/SideAttractions/Canada2.jpg';
 
 const QuickFacts = [
     'Canada Is a Wonderful Place to Live and Study. Since 2004, the United Nations has regularly ranked Canada highly in its Quality of Life Index',
@@ -17,7 +19,7 @@ const QuickFacts = [
 const country = 'CANADA';
 
 function Canada(props) {
-    const largeContent = <>`
+    const largeContent = <>
     <div class='flex gap-6 py-4 flex-col lg:flex-row lg:items-center'>
         <div class=''>
             <h2 class='text-lg md:text-2xl font-medium'>WHY {country}?</h2>
@@ -27,10 +29,10 @@ function Canada(props) {
             </p>
             {/* <!-- Other paragraphs --> */}
         </div>
-        <img src='' alt="France" className='object-contain lg:max-w-lg rounded-lg' />
+        <img src={Img1} alt="France" className='object-contain lg:max-w-lg rounded-lg' />
     </div>
 <div class='flex gap-6 flex-col-reverse lg:flex-row items-start'>
-    <img src='' alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
+    <img src={Img2} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
     <div>
         <h2 class='text-lg md:text-2xl font-medium'>{country} SYSTEM OF EDUCATION</h2>
         <p class='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
@@ -94,7 +96,7 @@ function Canada(props) {
         </div>
     </div>
 </section>
-    `</>
+    </>
     return (
         <div className=''>
             <Information content={largeContent}/>
