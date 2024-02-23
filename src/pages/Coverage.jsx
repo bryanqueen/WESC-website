@@ -7,8 +7,7 @@ function Coverage(props) {
     return (
         <div>
             <Navbar/>
-            Coverage
-            <Outlet/>
+            
         </div>
     );
 }

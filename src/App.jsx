@@ -4,8 +4,9 @@ import About from './pages/About';
 import Blogs from './pages/Blogs';
 import Coverage from './pages/Coverage';
 import Jobs from './pages/Jobs';
-import Scholarships from './pages/Programmes';
 import Services from './pages/Services';
+import Programmes from './pages/Programmes';
+import { Apply } from './pages/Apply';
 import Canada from './pages/countries/Canada';
 import France from './pages/countries/France';
 import NewZealand from './pages/countries/NewZealand';
@@ -27,8 +28,9 @@ function App() {
           <Route path='uk' element={<UK/>}/>
         </Route>
         <Route path='/jobs' element={<Jobs/>}/>
-        <Route path='/programmes' element={<Scholarships/>}/>
+        <Route path='/programmes' element={<Programmes/>}/>
         <Route path='/services' element={<Services/>}/>
+        <Route path='/apply' element={<Apply/>}/>
       </Routes>
     </>
   )

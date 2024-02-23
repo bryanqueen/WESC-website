@@ -7,7 +7,8 @@ const MigrantOptions = [
     {option: 'to STUDY', value: ''},
     {option: 'to STUDY & WORK', value: ''},
     {option: 'a SCHOLARSHIP', value: ''},
-    {option: 'a SHORT-TIME COURSE', value: ''}
+    {option: 'a SHORT-TIME COURSE', value: ''},
+    {option: 'a STUDENT LOAN', value: ''}
 ]
 
 function QuickForm(props) {

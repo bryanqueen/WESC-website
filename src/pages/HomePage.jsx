@@ -8,6 +8,7 @@ import Testimonial from "../components/Testimonial";
 import UniquePrep from "../components/UniquePrep";
 import Footer from "../components/Footer";
 import BlogsOverview from "../components/BlogsOverview";
+import { CTA } from "../components/CTA";
 
 function HomePage(props) {
     return (
@@ -18,8 +19,9 @@ function HomePage(props) {
             <QuickForm/>
             <OurMarket/>
             <Testimonial/>
-            <BlogsOverview/>
+            {/* <BlogsOverview/> */}
             <UniquePrep/>
+            <CTA/>
             <Footer/>
         </div>
     );

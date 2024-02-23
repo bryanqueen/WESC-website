@@ -32,7 +32,7 @@ function About(props) {
         {name: 'Jesupelumi Ogunmola', position: 'Customer Experience Officer', image: Jesupelumi},
         {name: 'Aderibigbe Charles ', position: 'Recruitment Officer', image: Charles},
         {name: 'Precious K. Enubuzor', position: 'Recruitment Officer', image: Precious},
-        {name: 'Imhanbor Joseph', position: '', image: Joseph},
+        {name: 'Imhanbor Joseph', position: 'Social Media Manager/Ro', image: Joseph},
         {name: 'Umeh Daniel', position: 'Software Engineer', image: Daniel}
     ]
     return (
@@ -43,7 +43,7 @@ function About(props) {
                 <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">About Us</h2>
                 </div>
 
-                <div className='flex gap-6 py-4 flex-col lg:flex-row lg:items-center '>
+                <div className='flex gap-6 py-4 flex-col lg:flex-row justify-center items-center '>
                     <div className=''>
                 <h2 className='text-lg md:text-2xl font-medium'>About WESC</h2>
                     <p className='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
@@ -58,7 +58,7 @@ function About(props) {
                 </div>
                 <img src={Img1} alt="Yo Man" className='object-contain lg:max-w-lg rounded-lg' />
                 </div>
-                <div className='flex gap-6 flex-col-reverse lg:flex-row items-start'>
+                <div className='flex gap-6 flex-col-reverse lg:flex-row items-center justify-center'>
                     <img src={Img2} alt="Yo bro" className='object-contain lg:max-w-lg rounded-lg' />
                 <div>
                     <p className='max-w-lg mx-auto mt-4 text-lg font-semibold leading-relaxed text-gray-900'>

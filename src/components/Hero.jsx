@@ -1,5 +1,5 @@
 import HeroImg0 from '../assets/img1.jpg';
-import HeroImg1 from '../assets/img9.jpg';
+import HeroImg1 from '../assets/img8.jpg';
 import HeroImg2 from '../assets/img7.jpg';
 import HeroImg3 from '../assets/img13.jpg';
 import HeroImg4 from '../assets/img3.jpg';
@@ -14,7 +14,8 @@ const NavItems = [
     {name: 'Our Services', path: '/services'},
     {name: 'Our Coverage', path: '/coverage'},
     {name: 'Programmes', path: '/programmes'},
-    {name: 'Jobs', path: '/jobs'}
+    {name: 'Jobs', path: '/jobs'},
+    {name: 'Apply', path: '/apply'}
 ]
 
 const data = [
@@ -79,8 +80,11 @@ function Hero() {
     </nav>
     <div className="relative px-4 lg:px-8 max-w-7xl pt-20">
         <div className='grid grid-cols-1 md:grid-cols-2 justify-center items-center'>
-            <div>
-        <h1 class="mt-20 text-5xl font-bold text-secondary lg:mt-8 xl:text-8xl">{currentData.text}</h1>
+            <div className='flex flex-col gap-12 md:gap-10 lg:gap-8'>
+        <h1 class="mt-20 text-4xl font-bold text-secondary lg:text-6xl">{currentData.text}</h1>
+        <a href="/apply" className='px-4 py-2 bg-orange w-full lg:w-44 text-xl font-bold text-gray-800 hover:bg-orange/80 items-center flex justify-center rounded-md'>
+            Apply Now
+        </a>
             </div>
       
         </div>
