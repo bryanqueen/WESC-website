@@ -1,5 +1,6 @@
 import React from 'react';
 import Information from '../../components/Information';
+import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Img1 from '../../assets/SideAttractions/Canada1.jpg';
 import Img2 from '../../assets/SideAttractions/Canada2.jpg';
@@ -99,6 +100,7 @@ function Canada(props) {
     </>
     return (
         <div className=''>
+            <Navbar/>
             <Information content={largeContent}/>
             <Footer/>
         </div>

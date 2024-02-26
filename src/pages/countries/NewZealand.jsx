@@ -1,5 +1,6 @@
 import React from 'react';
 import Information from '../../components/Information';
+import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Img1 from '../../assets/SideAttractions/NZealand1.jpg';
 import Img2 from '../../assets/SideAttractions/NZealand2.jpg';
@@ -92,6 +93,7 @@ At every study level, New Zealand can give you a high-quality education that wil
 
     return (
         <div>
+            <Navbar/>
             <Information content={largeContent}/>
             <Footer/>
         </div>

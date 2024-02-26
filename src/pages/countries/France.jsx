@@ -24,7 +24,7 @@ function France(props) {
     const largeContent =  <>
     <div class='flex gap-6 py-4 flex-col lg:flex-row lg:items-center'>
         <div class=''>
-            <h2 class='text-lg md:text-2xl font-medium'>WHY FRANCE?</h2>
+            <h2 class='text-lg md:text-2xl font-medium'>WHY ${country}?</h2>
             <p class='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
                 France is one of the modern countries in the world and is the fourth most popular destination for international students. France is projected to become the world's seventh-largest economy by 2022 and the country’s economy is led by tourism, manufacturing, and pharmaceuticals. The French government has privatized many large companies partially or fully but maintains an evident presence in power, public transport, and defense. World-class infrastructure and communications, an innovative business community, and a modern regulatory system help France to earn high marks for business freedom.
             </p>

@@ -1,13 +1,19 @@
 import React from 'react';
-import { FaUser } from "react-icons/fa6";
+import Stephanie from '../assets/Testimonials/Stephanie.jpeg';
+import Christopher from '../assets/Testimonials/Christopher.jpeg';
+import Eunice from '../assets/Testimonials/Eunice.jpeg';
+import Chidiebube from '../assets/Testimonials/Chidiebube.jpeg';
+import Uduak from '../assets/Testimonials/Uduak.jpeg';
 
 function Testimonial(props) {
     const Testimonies = [
-        {name: 'Stephanie', comment: '', school: '', program: ''},
-        {name: 'Amara', comment: '', school: '', program: ''},
-        {name: 'Abimbola', comment: '', school: '', program: ''},
-        {name: 'Abiodun', comment: '', school: '', program: ''},
-        {name: 'Kenechukwu', comment: '', school: '', program: ''}
+        {image: Christopher, name: 'Christopher Uzoma', comment: 'I’ve been consistently impressed with WESC. The team is responsive, delivers excellent results promptly, and goes above and beyond to ensure satisfaction. Highly satisfied !', school: 'Arizona State University, USA', program: 'Robotics and Autonomous Systems (System Engineering)'},
+        {image: Eunice, name: 'Eunice Edokpolor', comment: '"You guys have been amazing, your admission processing is very prompt and relating to your client is excellent."', school: 'Canadore College Canada', program: 'Personal Support Worker'},
+        {image: '',name: 'Oluwatosin Bello', comment: 'I loved the services rendered, you not only help to apply to schools but also follow up and give assistance when necessary, I am really so grateful for the help❤️', school: 'Conestoga College, Canada', program: 'Occupational Health, Safety & Wellness'},
+        {image: Stephanie, name: 'Stephenie Ugochukwu Obiazikwor', comment: 'I had a fantastic experience working with WESC education to secure my spot at DePaul. Their guidances were invaluable throughout the process, and I couldnt be happier with the outcome. Highly recommend their services to anyone seeking assistance with their academic pursuits.', school: 'DePaul University, USA', program: 'Master of Science - Data Science - Computational Methods'},
+        {image: Chidiebube, name: 'Chidiebube Joseph Uduh', comment: "Highly recommended, if you're seeking to gain admissions abroad, they guide you all the way until you enter you begin your first lecture even when you're overseas. Always responsive to any & every urgent request or requirement from the school, step by step guidance on do's & don'ts... I highly recommend this company for anyone interested in travel study. The schools also respond to their direct mails as I presume they have affiliations with this agency. Great job team keep the good work!", school: 'Georgian College, Canada.', program: 'Supply Chain Management.'},
+        {image: '',name: 'Brume Osale Charles', comment: 'Your services are really great. I mean you no only help secure admission but you also help students with obtaining financial aid which is usually the greatest challenge we face even after getting admission. Keep it up. 👍', school: 'Massachusetts College of Pharmacy and  Health Sciences', program: 'Master of Public Health'},
+        {image: Uduak, name: 'Uduak Okon Iwatt', comment: 'I can attest to the professional service offered  by WESC NIGERIA. Quick response time and quality educational service.', school: 'Niagara College, Canada', program: 'Business -Accounting'},
     ]
     return (
         <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
@@ -21,8 +27,8 @@ function Testimonial(props) {
             <div key={idx} class="overflow-hidden bg-white rounded-md shadow">
                 <div class="px-8 py-12">
                     <div class="relative w-24 h-24 mx-auto">
-                        {/* <img class="relative object-cover w-24 h-24 mx-auto rounded-full" src='' alt="" /> */}
-                        <FaUser className='relative object-cover w-24 h-24 mx-auto rounded-full text-gray-500'/>
+                        <img class="relative object-cover w-24 h-24 mx-auto rounded-full" src={testimony.image} alt="" />
+                        {/* <FaUser className='relative object-cover w-24 h-24 mx-auto rounded-full text-gray-500'/> */}
                         <div class="absolute top-0 right-0 flex items-center justify-center bg-primary rounded-full w-7 h-7">
                             <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                 <path
@@ -32,11 +38,11 @@ function Testimonial(props) {
                         </div>
                     </div>
                     <blockquote class="mt-7">
-                        <p class="text-md font-medium text-black/70">Big Thanks to WESC, i am able to study in my dream university</p>
+                        <p class="text-md font-medium text-black/70">{testimony.comment}</p>
                     </blockquote>
                     <p class="text-lg font-bold text-black mt-9">{testimony.name}</p>
-                    <p class="mt-1 text-base font-medium text-gray-800">Mechanical Engineering</p>
-                    <p class="mt-1 text-base text-gray-600">Brock University</p>
+                    <p class="mt-1 text-base font-medium text-gray-800">{testimony.program}</p>
+                        <p class="mt-1 text-base text-gray-600">{testimony.school}</p>
                 </div>
             </div>
             ))}

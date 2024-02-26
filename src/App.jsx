@@ -11,6 +11,8 @@ import Canada from './pages/countries/Canada';
 import France from './pages/countries/France';
 import NewZealand from './pages/countries/NewZealand';
 import UK from './pages/countries/UK';
+import Australia from './pages/countries/Australia';
+import Ireland from './pages/countries/Ireland';
 
 function App() {
 
@@ -21,12 +23,13 @@ function App() {
         <Route index element={<HomePage/>}/>
         <Route path='/about-us' element={<About/>}/>
         <Route path='/blogs' element={<Blogs/>}/>
-        <Route path='/coverage' element={<Coverage/>}>
+        <Route path='/coverage' element={<Coverage/>}/>
           <Route path='canada' element={<Canada/>}/>
           <Route path='france' element={<France/>}/>
           <Route path='new-zealand' element={<NewZealand/>}/>
           <Route path='uk' element={<UK/>}/>
-        </Route>
+          <Route path='/australia' element={<Australia/>}/>
+          <Route path='/ireland' element={<Ireland/>}/>
         <Route path='/jobs' element={<Jobs/>}/>
         <Route path='/programmes' element={<Programmes/>}/>
         <Route path='/services' element={<Services/>}/>
