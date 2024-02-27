@@ -2,7 +2,7 @@
 
     return (
         <section className="py-14 max-w-screen-xl mx-auto">
-            <div className="relative h-64 overflow-hidden mx-4 px-4 py-14 rounded-2xl bg-primary/70 md:px-8 md:mx-8">
+            <div className="relative h-64 overflow-hidden mx-4 px-4 py-14 rounded-2xl bg-primary md:px-8 md:mx-8">
                 <div className="relative z-10 max-w-xl mx-auto sm:text-center">
                     <div className="space-y-3">
 
@@ -20,7 +20,7 @@
                                 className="text-gray-500 w-full p-2 outline-none"
                             />
                             <button
-                                className="p-2 px-3 rounded-lg font-medium text-white bg-orange active:bg-red duration-150 outline-none shadow-md focus:shadow-none sm:px-4"
+                                className="p-2 px-3 rounded-lg font-medium text-white bg-red duration-150 outline-none shadow-md focus:shadow-none sm:px-4"
                             >
                                 Subscribe
                             </button>
