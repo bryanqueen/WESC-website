@@ -9,7 +9,7 @@ const NavItems = [
     {name: 'About', path: '/about-us'},
     {name: 'Our Services', path: '/services'},
     {name: 'Our Coverage', path: '/coverage'},
-    {name: 'Programmes', path: '/programmes'},
+    // {name: 'Programmes', path: '/programmes'},
     {name: 'Jobs', path: '/jobs'},
     {name: 'Apply', path: '/apply'}
 ]
@@ -24,7 +24,7 @@ function Navbar(props) {
         setActiveNavItem(currentLocation)
     },[location.pathname])
     return (
-        <nav className=" w-full bg-primary px-4 lg:px-8 py-4">
+        <nav className=" w-full bg-primary px-4 lg:px-8 py-4 ">
         <div className="mx-auto flex items-center justify-between">
             
             <a href="/" className="">

@@ -6,56 +6,55 @@ import { FaPersonWalkingArrowRight } from "react-icons/fa6"
 import { BsPassport } from "react-icons/bs";
 import { GiTallBridge } from "react-icons/gi";
 import { MdFamilyRestroom } from "react-icons/md";
+import BackgroundImage from '../assets/img15.jpg';
+import img22 from '../assets/img22.jpeg';
+import img23 from '../assets/img23.jpeg';
+import img24 from '../assets/img24.jpeg';
+import img25 from '../assets/img25.jpeg';
+import img26 from '../assets/img26.jpeg';
+import img27 from '../assets/img27.jpeg';
 
-const iconStyle1 = 'w-10 h-10 text-orange';
-const iconStyle2 = 'w-10 h-10 text-red'
 
 const PathWays =[
-    {pathname: 'Study Permit', icon: <TbSchool className={iconStyle1}/>},
-    {pathname: 'Work Permit', icon: <GoBriefcase className={iconStyle2}/>},
-    {pathname: 'Changing your Study Permit', icon: <IoMdSwitch className={iconStyle1}/>},
-    {pathname: 'Changing your Vistor Permit', icon: <FaPersonWalkingArrowRight className={iconStyle2}/>},
-    {pathname: 'Immigration', icon: <BsPassport className={iconStyle1}/>},
-    {pathname: 'Transitioning to permanent resident status', icon: <GiTallBridge className={iconStyle2}/>},
+    {pathname: 'Study Permit', img: img22},
+    {pathname: 'Work Permit', img: img23 },
+    {pathname: 'Changing your Study Permit', img: img24 },
+    {pathname: 'Changing your Vistor Permit', img: img25},
+    {pathname: 'Immigration', img: img26},
+    {pathname: 'Transitioning to permanent resident status', img: img27},
     
 ]
 
 function WescPathways(props) {
     return (
-        <section className="py-10 bg-gray-100 sm:py-16 lg:py-24">
-    <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl font-bold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">WESC Pathways</h2>
-            <p className="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">Depending on your desire and goal, this form enables WESC to assist you with any of the following:</p>
+        <section class="relative py-10 bg-gray-900 sm:py-16 lg:py-24">
+        <div class="absolute inset-0">
+            <img class="object-cover w-full h-full" src={BackgroundImage} alt="" />
         </div>
-
-        <ul className="max-w-md mx-auto mt-16 space-y-12">
-            {PathWays.map((item, idx) => (
-            <li key={idx} className="relative flex items-center">
-                <div className="-ml-0.5 absolute mt-0.5 top-14 left-8 w-px border-l-4 border-dotted border-gray-300 h-full" aria-hidden="true"></div>
-
-                <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white rounded-full shadow ">
-                   {item.icon}
-                </div>
-                <div className="ml-6">
-                    <h3 className="text-lg font-semibold text-black">{item.pathname}</h3>
-                </div>
-            </li>
-            ))}
-            <li className="relative flex items-center">
-                {/* <div className="-ml-0.5 absolute mt-0.5 top-14 left-8 w-px border-l-4 border-dotted border-gray-300 h-full" aria-hidden="true"></div> */}
-
-                <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-white rounded-full shadow ">
-                    <MdFamilyRestroom className='w-10 h-10 text-orange'/>
-                </div>
-                <div className="ml-6">
-                    <h3 className="text-lg font-semibold text-black">Bringing your family</h3>
-                </div>
-            </li>
-        </ul>
-    </div>
-</section>
-
+        <div class="absolute inset-0 bg-red/50"></div>
+        <div className="relative max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div className="max-w-2xl mx-auto text-center">
+                <h2 className="text-3xl font-bold leading-tight text-secondary sm:text-4xl lg:text-5xl">WESC Pathways</h2>
+            </div>
+    
+            <div className="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">
+                {PathWays.map((pathway, idx) => (
+                    <div key={idx} className="block rounded-bl-3xl rounded-tr-3xl bg-white overflow-hidden">
+                    <img
+                      alt=""
+                      src={pathway.img}
+                      className="h-56 w-full  object-cover sm:h-64 lg:h-72"
+                    />
+                  
+                    <div className="my-4 sm:flex sm:items-center sm:justify-center sm:gap-4">
+                      <strong className="font-medium">{pathway.pathname}</strong>
+                    </div>
+                  </div>
+                ))}
+    
+            </div>
+        </div>
+    </section>
     );
 }
 

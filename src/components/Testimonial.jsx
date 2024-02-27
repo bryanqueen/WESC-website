@@ -4,6 +4,7 @@ import Christopher from '../assets/Testimonials/Christopher.jpeg';
 import Eunice from '../assets/Testimonials/Eunice.jpeg';
 import Chidiebube from '../assets/Testimonials/Chidiebube.jpeg';
 import Uduak from '../assets/Testimonials/Uduak.jpeg';
+import Brume from '../assets/Testimonials/Brume.jpeg';
 
 function Testimonial(props) {
     const Testimonies = [
@@ -12,7 +13,7 @@ function Testimonial(props) {
         {image: '',name: 'Oluwatosin Bello', comment: 'I loved the services rendered, you not only help to apply to schools but also follow up and give assistance when necessary, I am really so grateful for the help❤️', school: 'Conestoga College, Canada', program: 'Occupational Health, Safety & Wellness'},
         {image: Stephanie, name: 'Stephenie Ugochukwu Obiazikwor', comment: 'I had a fantastic experience working with WESC education to secure my spot at DePaul. Their guidances were invaluable throughout the process, and I couldnt be happier with the outcome. Highly recommend their services to anyone seeking assistance with their academic pursuits.', school: 'DePaul University, USA', program: 'Master of Science - Data Science - Computational Methods'},
         {image: Chidiebube, name: 'Chidiebube Joseph Uduh', comment: "Highly recommended, if you're seeking to gain admissions abroad, they guide you all the way until you enter you begin your first lecture even when you're overseas. Always responsive to any & every urgent request or requirement from the school, step by step guidance on do's & don'ts... I highly recommend this company for anyone interested in travel study. The schools also respond to their direct mails as I presume they have affiliations with this agency. Great job team keep the good work!", school: 'Georgian College, Canada.', program: 'Supply Chain Management.'},
-        {image: '',name: 'Brume Osale Charles', comment: 'Your services are really great. I mean you no only help secure admission but you also help students with obtaining financial aid which is usually the greatest challenge we face even after getting admission. Keep it up. 👍', school: 'Massachusetts College of Pharmacy and  Health Sciences', program: 'Master of Public Health'},
+        {image: Brume, name: 'Brume Osale Charles', comment: 'Your services are really great. I mean you no only help secure admission but you also help students with obtaining financial aid which is usually the greatest challenge we face even after getting admission. Keep it up. 👍', school: 'Massachusetts College of Pharmacy and  Health Sciences', program: 'Master of Public Health'},
         {image: Uduak, name: 'Uduak Okon Iwatt', comment: 'I can attest to the professional service offered  by WESC NIGERIA. Quick response time and quality educational service.', school: 'Niagara College, Canada', program: 'Business -Accounting'},
     ]
     return (

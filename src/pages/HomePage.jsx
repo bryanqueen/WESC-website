@@ -9,6 +9,7 @@ import UniquePrep from "../components/UniquePrep";
 import Footer from "../components/Footer";
 import BlogsOverview from "../components/BlogsOverview";
 import { CTA } from "../components/CTA";
+import Newsletter from "../components/Newsletter";
 
 function HomePage(props) {
     return (
@@ -22,6 +23,7 @@ function HomePage(props) {
             {/* <BlogsOverview/> */}
             <UniquePrep/>
             <CTA/>
+            <Newsletter/>
             <Footer/>
         </div>
     );

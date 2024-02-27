@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import useDocumentTitle from '@rehooks/document-title';
 import Img1 from '../assets/img17.jpg';
 import Img2 from '../assets/img5.jpg';
+import Img3 from '../assets/img14.jpg'
 import Olawale from '../assets/Teams/Olawale.jpg';
 import Ese from '../assets/Teams/Ese.jpg';
 import Charles from '../assets/Teams/Charles.jpg';
@@ -107,7 +108,9 @@ function About(props) {
 
                 </ul>
             </div>
-
+            <div className='p-3 lg:p-6 bg-orange rounded-lg '> 
+                <img src={Img3} alt="" className='rounded-lg' />
+            </div>
             
         </div>
     </div>
