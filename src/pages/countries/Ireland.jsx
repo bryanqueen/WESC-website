@@ -2,21 +2,25 @@ import React from 'react';
 import Information from '../../components/Information';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import Img1 from '../../assets/SideAttractions/Ireland2.jpg';
+import Primary from '../assets/Primary.jpg';
+import Secondary from '../assets/Secondary.jpg';
+import Tertiary from '../assets/Tertiary.jpg'
 
 const EducationLevels = [
     {
-        img: '',
+        img: Primary,
         title: 'Primary Education',
         text: 'The primary education system in Ireland is based on the National Education System, which the Department of Education and Skills oversees.Primary education is compulsory for children aged 4-12 and is divided into two stages: junior and senior.',
        
     },
     {
-        img: '',
+        img: Secondary,
         title: 'Secondary Education',
         text: 'Secondary education in Ireland is compulsory from the ages of 14 to 18 and is divided into two levels: The junior cycle and the senior cycle, which lasts for two years.'
     },
     {
-        img: '',
+        img: Tertiary,
         title: 'Tertiary Education',
         text: 'The Irish tertiary education system comprises universities, technology institutes, and private colleges. All of these institutions offer a variety of undergraduate and postgraduate degrees, diplomas and certificate programs.'
     },
@@ -34,12 +38,12 @@ function Ireland(props) {
 Ireland offers the warmest of welcomes to students from all over the world. With one of the best education systems in the world, offering over 5,000 programmes, all internationally recognised and quality assured. The only English speaking country in the Eurozone, Ireland is globally connected and home to many of the worlds’ top companies. You will be able to work part time, if you want to, and avail of a 12 month stay back option – providing you career enhancing opportunities and differentiation for the future.
 
             </p>
-            {/* <!-- Other paragraphs --> */}
+            
         </div>
         <img src='' alt="" className='object-contain lg:max-w-lg rounded-lg' />
     </div>
 <div class='flex gap-6 flex-col-reverse lg:flex-row items-start'>
-    <img src='' alt="" className='object-contain lg:max-w-lg rounded-lg' />
+    <img src={Img1} alt="" className='object-contain lg:max-w-lg rounded-lg' />
     <div>
         <h2 class='text-lg md:text-2xl font-medium'>{country} SYSTEM OF EDUCATION</h2>
         <p class='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
@@ -47,7 +51,7 @@ Ireland offers the warmest of welcomes to students from all over the world. With
 Ireland offers various educational opportunities, from early childhood learning to secondary and tertiary education.
 The Ireland education system is one of the most advanced and comprehensive in the world. It is divided into primary, secondary and tertiary education, with each level offering different types of educational opportunities.developed
         </p>
-        {/* <!-- Other paragraphs --> */}
+        
     </div>
 </div>
 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 py-6 lg:py-14 bg-gray-100 my-10 rounded-lg">

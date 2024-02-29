@@ -48,9 +48,9 @@ function France(props) {
     </div> */}
 
     <div class="relative max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
-        <div class="grid items-end grid-cols-1 gap-y-10  md:gap-x-20">
-            <div>
                 <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">HERE ARE SOME QUICK FACTS ABOUT <span className='text-orange'>{country}</span></h2>
+        <div class="grid items-end grid-cols-1 lg:grid-cols-2 gap-y-10  md:gap-x-20">
+            <div>
                 <ul class="mt-12 space-y-4 md:mt-20">
                     {QuickFacts.map((facts, idx) => (
                          <li key={idx} class="flex items-start space-x-3">

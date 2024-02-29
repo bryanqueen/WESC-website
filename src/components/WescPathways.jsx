@@ -1,11 +1,4 @@
 import React from 'react';
-import { TbSchool } from "react-icons/tb";
-import { GoBriefcase } from "react-icons/go";
-import { IoMdSwitch } from "react-icons/io";
-import { FaPersonWalkingArrowRight } from "react-icons/fa6"
-import { BsPassport } from "react-icons/bs";
-import { GiTallBridge } from "react-icons/gi";
-import { MdFamilyRestroom } from "react-icons/md";
 import BackgroundImage from '../assets/img15.jpg';
 import img22 from '../assets/img22.jpeg';
 import img23 from '../assets/img23.jpeg';
@@ -44,6 +37,7 @@ function WescPathways(props) {
                       alt=""
                       src={pathway.img}
                       className="h-56 w-full  object-cover sm:h-64 lg:h-72"
+                      loading='lazy'
                     />
                   
                     <div className="my-4 sm:flex sm:items-center sm:justify-center sm:gap-4">

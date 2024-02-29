@@ -28,7 +28,7 @@ function Navbar(props) {
         <div className="mx-auto flex items-center justify-between">
             
             <a href="/" className="">
-                <img src={Logo} alt="" className='w-32 lg:w-44' />
+                <img src={Logo} alt="" className='w-32 lg:w-44' loading='lazy' />
             </a>
 
            

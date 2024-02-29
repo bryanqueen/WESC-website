@@ -28,7 +28,7 @@ function Testimonial(props) {
             <div key={idx} class="overflow-hidden bg-white rounded-md shadow">
                 <div class="px-8 py-12">
                     <div class="relative w-24 h-24 mx-auto">
-                        <img class="relative object-cover w-24 h-24 mx-auto rounded-full" src={testimony.image} alt="" />
+                        <img class="relative object-cover w-24 h-24 mx-auto rounded-full" src={testimony.image} alt="" loading='lazy'/>
                         {/* <FaUser className='relative object-cover w-24 h-24 mx-auto rounded-full text-gray-500'/> */}
                         <div class="absolute top-0 right-0 flex items-center justify-center bg-primary rounded-full w-7 h-7">
                             <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">

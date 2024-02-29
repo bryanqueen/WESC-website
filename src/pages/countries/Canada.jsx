@@ -19,7 +19,7 @@ const QuickFacts = [
 
 const country = 'CANADA';
 
-function Canada(props) {
+function Canada() {
     const largeContent = <>
     <div class='flex gap-6 py-4 flex-col lg:flex-row lg:items-center'>
         <div class=''>
@@ -28,7 +28,6 @@ function Canada(props) {
             Canada is a land of rich diversity, encompassing urban sophistication and abundant nature and wildlife. It is safe yet exciting; stable yet filled with adventure. It features cutting-edge technology, inspiring cultural icons, and a vibrant society that is open to everyone. Canadians tend to be modern, welcoming, and open-minded. Across Canada are examples of excellence, innovation, and beauty, all of which—along with top-notch educational institutions—make Canada one of the leading study abroad destinations in the world.
 
             </p>
-            {/* <!-- Other paragraphs --> */}
         </div>
         <img src={Img1} alt="France" className='object-contain lg:max-w-lg rounded-lg' />
     </div>
@@ -39,13 +38,9 @@ function Canada(props) {
         <p class='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
         The systems of education in Canada are comprehensive and recognized internationally for their high quality. They are understood as “systems” of education because each province and territory has exclusive responsibility for elementary, secondary, and post-secondary education within its borders. There is no national department of education; however, there are national mechanisms to facilitate recognition and transferability of course credits and credentials.
         </p>
-        {/* <!-- Other paragraphs --> */}
     </div>
 </div>
 <section class="relative py-10 overflow-hidden bg-primary sm:py-16 lg:py-24 rounded-xl">
-    {/* <div class="absolute bottom-0 right-0 -mb-48 md:inset-y-0">
-        <img class="object-cover w-full h-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/pricing/8/lines.svg" alt="" />
-    </div> */}
 
     <div class="relative max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
         <div class="grid items-end grid-cols-1 gap-y-10  md:gap-x-20">

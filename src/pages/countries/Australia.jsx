@@ -2,6 +2,7 @@ import React from 'react';
 import Information from '../../components/Information';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import Img from '../../assets/SideAttractions/Australia2.jpg';
 
 const QuickFacts = [
     'University Rankings And Reputation',
@@ -18,7 +19,7 @@ const country = 'AUSTRALIA'
 
 function Australia(props) {
     const largeContent = <>
-    <div class='flex gap-6 py-4 flex-col lg:flex-row lg:items-center'>
+    <div class='flex gap-6 py-4 flex-col lg:flex-row justify-center'>
         <div class=''>
             <h2 class='text-lg md:text-2xl font-medium'>WHY {country}?</h2>
             <p class='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
@@ -26,24 +27,31 @@ function Australia(props) {
 Australia has many top-ranked universities in the world. The universities provide quality education along with various scholarships for students to afford the study in the university. The cities in Australia are student-friendly and provide great multicultural diversity. Other than these, there are many benefits of studying in Australia which makes it one of the popular study destinations.
 
             </p>
-            {/* <!-- Other paragraphs --> */}
         </div>
         <img src='' alt="" className='object-contain lg:max-w-lg rounded-lg' />
     </div>
-<div class='flex gap-6 flex-col-reverse lg:flex-row items-start'>
-    <img src='' alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
+<div class='flex gap-6 flex-col-reverse lg:flex-row justify-center'>
+    <img src={Img} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
     <div>
-        <h2 class='text-lg md:text-2xl font-medium'>{country} SYSTEM OF EDUCATION</h2>
+        
         <p class='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
-        The systems of education in Canada are comprehensive and recognized internationally for their high quality. They are understood as “systems” of education because each province and territory has exclusive responsibility for elementary, secondary, and post-secondary education within its borders. There is no national department of education; however, there are national mechanisms to facilitate recognition and transferability of course credits and credentials.
+        Australia is a popular study-abroad destination for international students because of numerous reasons. Australia is home to top universities and offers an exciting and affordable lifestyle for students. The scenic beauty and the sea and sunshine are other factors in are some of the benefits of studying in Australia. It is no surprise that thousands of international students wish to study in Australia every year. Seven cities in Australia count among the 100 student-friendly cities in the world. After the US and the UK, Australia is the third most popular study-abroad destination. The world-class universities, the various course choices, and the post-study work options are among the many benefits of studying in Australia for international students. read further to learn more about the top reasons to study in Australia for international students.
         </p>
-        {/* <!-- Other paragraphs --> */}
+        
     </div>
+    
 </div>
+        <div class='flex gap-6 flex-col lg:flex-row justify-center py-4'>
+    <div>
+        <p className='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
+       The Australian education system offers a wide range of study options, in Australia and around the world. Universities and non-university higher education providers (including private institutes and Government-owned TAFEs) offer undergraduate and postgraduate studies, including Bachelor degrees, Master degrees and Doctoral degrees.  Many higher education providers also offer Graduate Diploma and Graduate Certificate programs, and even Associate Degrees leading to full Bachelor qualifications.  
+        </p>
+    </div>
+    <img src='' alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
+</div>
+    
+    
 <section class="relative py-10 overflow-hidden bg-primary sm:py-16 lg:py-24 rounded-xl mt-10 md:mt-20">
-    {/* <div class="absolute bottom-0 right-0 -mb-48 md:inset-y-0">
-        <img class="object-cover w-full h-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/pricing/8/lines.svg" alt="" />
-    </div> */}
 
     <div class="relative max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">HERE ARE SOME QUICK FACTS ABOUT <span className='text-orange'>{country}</span></h2>
