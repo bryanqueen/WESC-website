@@ -15,6 +15,8 @@ import Australia from './pages/countries/Australia';
 import Ireland from './pages/countries/Ireland';
 import Cyprus from './pages/countries/Cyprus';
 import Germany from './pages/countries/Germany';
+import US from './pages/countries/US';
+import Netherlands from './pages/countries/Netherlands';
 
 function App() {
 
@@ -34,6 +36,8 @@ function App() {
           <Route path='/ireland' element={<Ireland/>}/>
           <Route path='/cyprus' element={<Cyprus/>}/>
           <Route path='/germany' element={<Germany/>}/>
+          <Route path='/usa' element={<US/>}/>
+          <Route path='/nethetlands' element={<Netherlands/>}/>
         <Route path='/jobs' element={<Jobs/>}/>
         <Route path='/programmes' element={<Programmes/>}/>
         <Route path='/services' element={<Services/>}/>

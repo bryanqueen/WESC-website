@@ -31,7 +31,6 @@ function NewZealand(props) {
 At every study level, New Zealand can give you a high-quality education that will enable you to achieve your goals. Students in New Zealand are supported to solve problems, process information, work with others, create and innovate.
 
             </p>
-            {/* <!-- Other paragraphs --> */}
         </div>
         <img src={Img1} alt="France" className='object-contain lg:max-w-lg rounded-lg' />
     </div>
@@ -42,14 +41,9 @@ At every study level, New Zealand can give you a high-quality education that wil
         <p class='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
         The New Zealand Qualifications Framework (NZQF) is a system for acknowledging the level and quality of qualifications offered by New Zealand education providers. All qualifications listed on the NZQF come with an assurance of quality that is recognised and trusted worldwide.
         </p>
-        {/* <!-- Other paragraphs --> */}
     </div>
 </div>
 <section class="relative py-10 overflow-hidden bg-primary sm:py-16 lg:py-24 rounded-xl">
-    {/* <div class="absolute bottom-0 right-0 -mb-48 md:inset-y-0">
-        <img class="object-cover w-full h-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/pricing/8/lines.svg" alt="" />
-    </div> */}
-
     <div class="relative max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
         <div class="grid items-end grid-cols-1 gap-y-10  md:gap-x-20">
             <div>

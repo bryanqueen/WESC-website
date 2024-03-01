@@ -76,7 +76,6 @@ function UK() {
         <div class="grid items-center grid-cols-1 gap-y-6  md:gap-x-20">
             <div class="">
                 <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">UNDERSTANDING YOUR OPTIONS </h2>
-                {/* <h3 className='text-xl font-semibold leading-tight text-gray-700 lg:text-3xl py-4'>Higher education (ages 18+)</h3> */}
         <p class="mt-4 text-base leading-relaxed text-gray-600"> 
         New Zealand has eight state-funded universities, 16 Institutes of Technology and Polytechnics (ITPs) which have been unified into the Te Pūkenga- New Zealand Institute of Skills and Technology (NZIST), and about 550 Private Training Establishments (PTEs), which include English language schools.
         <ul className='p-6 md:pl-12 text-gray-800 font-medium flex flex-col gap-4'>

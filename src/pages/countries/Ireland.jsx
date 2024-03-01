@@ -3,9 +3,9 @@ import Information from '../../components/Information';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Img1 from '../../assets/SideAttractions/Ireland2.jpg';
-import Primary from '../assets/Primary.jpg';
-import Secondary from '../assets/Secondary.jpg';
-import Tertiary from '../assets/Tertiary.jpg'
+import Primary from '../../assets/Primary.jpg';
+import Secondary from '../../assets/Secondary.jpg';
+import Tertiary from '../../assets/Tertiary.jpg'
 
 const EducationLevels = [
     {
@@ -30,7 +30,7 @@ const EducationLevels = [
 const country = 'IRELAND'
 function Ireland(props) {
     const largeContent = <>
-    <div class='flex gap-6 py-4 flex-col lg:flex-row lg:items-center'>
+    <div class='flex gap-6 py-4 flex-col lg:flex-row justify-center'>
         <div class=''>
             <h2 class='text-lg md:text-2xl font-medium'>WHY {country}?</h2>
             <p class='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
@@ -42,7 +42,7 @@ Ireland offers the warmest of welcomes to students from all over the world. With
         </div>
         <img src='' alt="" className='object-contain lg:max-w-lg rounded-lg' />
     </div>
-<div class='flex gap-6 flex-col-reverse lg:flex-row items-start'>
+<div class='flex gap-6 flex-col-reverse lg:flex-row justify-center'>
     <img src={Img1} alt="" className='object-contain lg:max-w-lg rounded-lg' />
     <div>
         <h2 class='text-lg md:text-2xl font-medium'>{country} SYSTEM OF EDUCATION</h2>
