@@ -2,8 +2,9 @@ import React from 'react';
 import Information from '../../components/Information';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import Img1 from '../../assets/SideAttractions/Uk1.jpg';
+import Img1 from '../../assets/CountryStuStock/Img3.jpg';
 import Img2 from '../../assets/SideAttractions/UK2.jpg';
+import Img3 from '../../assets/CountryStuStock/Img4.jpg';
 
 const QuickFacts = [
     'High Quality Education',
@@ -29,7 +30,7 @@ function UK() {
             The United Kingdom is a popular destination for international students due to its high-quality education system, diverse culture, and English language proficiency. It offers a wide range of programs, access to research opportunities, and strong academic networks. UK higher education and qualifications have a remarkable international reputation, and a UK undergraduate or postgraduate degree is globally recognised by international education, top employers and government bodies, creating a huge number of future opportunites for you at companies all over the world. UK is home to some of the world's greatest universities and its institutions consistently top global rankings. The United Kingdom (UK) is different from other countries in several ways. One unique aspect is its constitutional monarchy, with a parliamentary democracy. The UK also consists of four constituent countries: England, Scotland, Wales, and Northern Ireland, each with its own distinct culture and identity.
             </p>
         </div>
-        <img src={Img2} alt="France" className='object-contain lg:max-w-lg rounded-lg' />
+        <img src={Img1} alt="France" className='object-contain lg:max-w-lg rounded-lg' />
     </div>
 <div class='flex gap-6 flex-col-reverse lg:flex-row py-4 justify-center '>
     <img src={Img2} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
@@ -47,7 +48,7 @@ function UK() {
         Some universities and other higher education providers are ranked top among universities worldwide. The UK capital city, London, not by accident, is considered to be the world’s capital city of higher education. With its four universities ranked in the world’s top ten, London has the highest number of worldwide-ranked universities per city. By definition, UK higher education is the level of education that follows secondary school at the hierarchy of the educational system in the UK. When high school is over, Britons have to sit in a standard examination, making them eligible not to continue their education at a higher level.
         </p>
     </div>
-    <img src={Img2} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
+    <img src={Img3} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
 </div>
 <section class="relative py-10 overflow-hidden bg-primary sm:py-16 lg:py-24 rounded-xl">
     <div class="relative max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">

@@ -2,8 +2,9 @@ import React from 'react';
 import Information from '../../components/Information';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import Img from '../../assets/SideAttractions/Australia2.jpg';
-
+import Img1 from '../../assets/SideAttractions/Australia2.jpg';
+import Img2 from '../../assets/CountryStuStock/Img3.jpg';
+import Img3 from '../../assets/CountryStuStock/Img2.jpg';
 const QuickFacts = [
     'University Rankings And Reputation',
     'Wide Range of Courses And Subjects',
@@ -28,10 +29,10 @@ Australia has many top-ranked universities in the world. The universities provid
 
             </p>
         </div>
-        <img src='' alt="" className='object-contain lg:max-w-lg rounded-lg' />
+        <img src={Img2} alt="" className='object-contain lg:max-w-lg rounded-lg' />
     </div>
 <div class='flex gap-6 flex-col-reverse lg:flex-row justify-center'>
-    <img src={Img} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
+    <img src={Img1} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
     <div>
         
         <p class='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
@@ -47,7 +48,7 @@ Australia has many top-ranked universities in the world. The universities provid
        The Australian education system offers a wide range of study options, in Australia and around the world. Universities and non-university higher education providers (including private institutes and Government-owned TAFEs) offer undergraduate and postgraduate studies, including Bachelor degrees, Master degrees and Doctoral degrees.  Many higher education providers also offer Graduate Diploma and Graduate Certificate programs, and even Associate Degrees leading to full Bachelor qualifications.  
         </p>
     </div>
-    <img src='' alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
+    <img src={Img3} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
 </div>
     
     

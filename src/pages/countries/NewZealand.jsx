@@ -2,8 +2,10 @@ import React from 'react';
 import Information from '../../components/Information';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import Img1 from '../../assets/SideAttractions/NZealand1.jpg';
+import Img1 from '../../assets/CountryStuStock/Img13.jpg';
 import Img2 from '../../assets/SideAttractions/NZealand2.jpg';
+import Img3 from '../../assets/CountryStuStock/Img14.jpg';
+
 
 const QuickFacts = [
     'New Zealand is one of the safest countries in the world',
@@ -23,7 +25,7 @@ const country = 'NEW ZEALAND';
 function NewZealand(props) {
 
     const largeContent = <>
-          <div class='flex gap-6 py-4 flex-col lg:flex-row lg:items-center'>
+          <div class='flex gap-6 py-4 flex-col lg:flex-row justify-center'>
         <div class=''>
             <h2 class='text-lg md:text-2xl font-medium'>WHY {country}?</h2>
             <p class='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
@@ -34,14 +36,36 @@ At every study level, New Zealand can give you a high-quality education that wil
         </div>
         <img src={Img1} alt="France" className='object-contain lg:max-w-lg rounded-lg' />
     </div>
-<div class='flex gap-6 flex-col-reverse lg:flex-row items-start'>
+<div class='flex gap-6 flex-col-reverse lg:flex-row justify-center py-4'>
     <img src={Img2} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
     <div>
         <h2 class='text-lg md:text-2xl font-medium'>{country} SYSTEM OF EDUCATION</h2>
         <p class='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
-        The New Zealand Qualifications Framework (NZQF) is a system for acknowledging the level and quality of qualifications offered by New Zealand education providers. All qualifications listed on the NZQF come with an assurance of quality that is recognised and trusted worldwide.
+        The New Zealand Qualifications Framework (NZQF) is a system for acknowledging the level and quality of qualifications offered by New Zealand education providers. All qualifications listed on the NZQF come with an assurance of quality that is recognised and trusted worldwide. <br />
+        <span className='text-gray-800 font-medium text-md'>Study levels – the New Zealand Qualifications Framework</span> <br />
+The New Zealand Qualifications Framework (NZQF) is a system for acknowledging the level and quality of qualifications offered by New Zealand education providers. All qualifications listed on the NZQF come with an assurance of quality that is recognised and trusted worldwide.
         </p>
     </div>
+</div>
+    <div class='flex gap-6 flex-col lg:flex-row justify-center py-4'>
+        <div>
+        <p className='max-w-lg mx-auto mt-4 text-base leading-relaxed'>
+        <h2 class='text-lg md:text-2xl font-medium'>The New Zealand Qualifications Framework has 10 levels:</h2>
+        <p class="mt-4 text-base leading-relaxed text-gray-600"> 
+        •	Levels 1-4 cover the National Certificate of Educational Achievement (NCEA) - the main qualification in secondary schools, and basic vocational training.
+        </p>
+        <p class="mt-4 text-base leading-relaxed text-gray-600"> 
+        •	Levels 5-6 cover sub-degree vocational certificates and diplomas.
+        </p>
+        <p class="mt-4 text-base leading-relaxed text-gray-600"> 
+        •	Levels 7-10 cover degrees, graduate and postgraduate qualifications.
+        </p>
+        <p className='max-w-lg mx-auto mt-4 text-base font-medium leading-relaxed text-gray-00'>
+        The NZQF study level indicates how advanced a qualification is. It is also relevant for post-study work visas for international students in New Zealand
+        </p>
+    </p>
+    </div>
+    <img src={Img3} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
 </div>
 <section class="relative py-10 overflow-hidden bg-primary sm:py-16 lg:py-24 rounded-xl">
     <div class="relative max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
@@ -76,7 +100,6 @@ At every study level, New Zealand can give you a high-quality education that wil
         <p class="mt-4 text-base leading-relaxed text-gray-600"> 
         New Zealand has eight state-funded universities, 16 Institutes of Technology and Polytechnics (ITPs) which have been unified into the Te Pūkenga- New Zealand Institute of Skills and Technology (NZIST), and about 550 Private Training Establishments (PTEs), which include English language schools.
         </p>
-        
             </div>
 
           

@@ -1,8 +1,11 @@
 import React from 'react';
 import Information from '../../components/Information';
 import Footer from '../../components/Footer';
-import Img1 from '../../assets/SideAttractions/France1.jpg';
+import Img1 from '../../assets/CountryStuStock/Img6.jpg';
 import Img2 from '../../assets/SideAttractions/France2.jpg';
+import Img3 from '../../assets/CountryStuStock/Img7.jpg';
+import Navbar from '../../components/Navbar';
+
 const QuickFacts = [
     'France is a world-leader with a strong economy',
     'France is home to leading international corporations: Airbus, Total, Orange, LVMH, L’Oréal, Danone',
@@ -22,9 +25,9 @@ const country = 'FRANCE'
 
 function France(props) {
     const largeContent =  <>
-    <div class='flex gap-6 py-4 flex-col lg:flex-row lg:items-center'>
+    <div class='flex gap-6 py-4 flex-col lg:flex-row justify-center'>
         <div class=''>
-            <h2 class='text-lg md:text-2xl font-medium'>WHY ${country}?</h2>
+            <h2 class='text-lg md:text-2xl font-medium'>WHY {country}?</h2>
             <p class='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
                 France is one of the modern countries in the world and is the fourth most popular destination for international students. France is projected to become the world's seventh-largest economy by 2022 and the country’s economy is led by tourism, manufacturing, and pharmaceuticals. The French government has privatized many large companies partially or fully but maintains an evident presence in power, public transport, and defense. World-class infrastructure and communications, an innovative business community, and a modern regulatory system help France to earn high marks for business freedom.
             </p>
@@ -32,21 +35,25 @@ function France(props) {
         </div>
         <img src={Img1} alt="France" className='object-contain lg:max-w-lg rounded-lg' />
     </div>
-<div class='flex gap-6 flex-col-reverse lg:flex-row items-start'>
+<div class='flex gap-6 flex-col-reverse lg:flex-row justify-center py-4'>
     <img src={Img2} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
     <div>
         <h2 class='text-lg md:text-2xl font-medium'>FRANCE SYSTEM OF EDUCATION</h2>
         <p class='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
-            French Education system has a strong influence on the Central state in terms of planning as well as funding. Higher education in France is regulated by the Department for National Education. Primary education in France from age three for about twenty years.
+        French Education system has a strong influence on the Central state in terms of planning as well as funding. Higher education in France is regulated by the Department for National Education. Primary education in France from age three for about twenty years.Education framework defined by the Parliament, states the fundamental principles of education. The State defines the details of curricula at all education levels, funds the public institutions.
         </p>
-        {/* <!-- Other paragraphs --> */}
     </div>
 </div>
+<div class='flex gap-6 flex-col lg:flex-row justify-center py-4'>
+    <div>
+        <h2 class='text-lg md:text-2xl font-medium'>Do I need to speak French to study in France</h2>
+        <p className='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
+        French is not mandatory for students taking up Bachelors in France. Students are suggested to learn the language for practical reasons and to manage daily activities since French is the most commonly spoken language. Other wise, courses are offered in English and courses given by Universities to Study in France in English Bachelor is a welcoming option for students. Unlike many countries, there is no proof or no mandatory requirement to know French if you have to study a Bachelors or Masters. Every year, 10,000+ students go to France from all over the world for in France in English Masters.
+        </p>
+    </div>
+    <img src={Img3} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
+</div>
 <section class="relative py-10 overflow-hidden bg-primary sm:py-16 lg:py-24 rounded-xl">
-    {/* <div class="absolute bottom-0 right-0 -mb-48 md:inset-y-0">
-        <img class="object-cover w-full h-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/pricing/8/lines.svg" alt="" />
-    </div> */}
-
     <div class="relative max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">HERE ARE SOME QUICK FACTS ABOUT <span className='text-orange'>{country}</span></h2>
         <div class="grid items-end grid-cols-1 lg:grid-cols-2 gap-y-10  md:gap-x-20">
@@ -97,6 +104,7 @@ function France(props) {
     </>
     return (
         <div>
+            <Navbar/>
            <Information content={largeContent}/>
             <Footer/>
         </div>

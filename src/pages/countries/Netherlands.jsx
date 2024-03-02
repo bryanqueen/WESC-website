@@ -2,7 +2,10 @@ import React from 'react';
 import Information from '../../components/Information';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import Img1 from '../../assets/SideAttractions/Netherlands2.jpg'
+import Img1 from '../../assets/SideAttractions/Netherlands2.jpg';
+import Img2 from '../../assets/CountryStuStock/Img11.jpg';
+import Img3 from '../../assets/CountryStuStock/Img12.jpg';
+
 
 const QuickFacts = [
     'International students from all over the world come to study in the Netherlands.',
@@ -24,7 +27,7 @@ function Netherlands() {
             Netherland or Holland? Whichever name you use, one thing is sure; it is a place of opportunities. With over 170 nationalities, it is a very multicultural society. Over 122,000 foreign students study here each year. That makes Holland the perfect place for sharing knowledge, ideas and cultures. It is also a very safe country. In fact, it is one of the 25 safest countries in the world. The Dutch character? Open, friendly and direct. Almost everyone speaks English along with another foreign language, like German or French. So you don’t have to learn Dutch to study here. As a foreign student, you will notice how welcoming and tolerant the Dutch are.
             </p>
         </div>
-        <img src='' alt="France" className='object-contain lg:max-w-lg rounded-lg' />
+        <img src={Img2} alt="France" className='object-contain lg:max-w-lg rounded-lg' />
     </div>
     <div class='flex gap-6 flex-col-reverse lg:flex-row py-4 justify-center '>
     <img src={Img1} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
@@ -36,14 +39,13 @@ function Netherlands() {
         </p>
     </div>
 </div>
-<div class='flex gap-6 flex-col-reverse lg:flex-row py-4 justify-center '>
-    <img src='' alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
+<div class='flex gap-6 flex-col lg:flex-row py-4 justify-center '>
     <div>
-        <h2 class='text-lg md:text-2xl font-medium'>UK SYSTEM OF EDUCATION</h2>
         <p class='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
         The Netherland educational system focuses on teamwork, creating an ideal environment to make friends. The teaching style in the Netherlands can be described as interactive and student-centered, providing students with the attention and freedom they need to develop their own opinions and creativity in applying their newly acquired knowledge. By studying in the Netherlands, you will develop an open mind and increase your international orientation. 
         </p>
     </div>
+    <img src={Img3} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
 </div>
 <section class="relative py-10 overflow-hidden bg-primary sm:py-16 lg:py-24 rounded-xl">
     <div class="relative max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">

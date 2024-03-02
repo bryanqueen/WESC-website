@@ -3,6 +3,8 @@ import Information from '../../components/Information';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Img1 from '../../assets/SideAttractions/Cyprus2.jpg';
+import Img2 from '../../assets/CountryStuStock/Img4.jpg';
+import Img3 from '../../assets/CountryStuStock/Img5.jpg';
 
 const QuickFacts = [
     'Besides its beautiful landscape, Cyprus is also becoming a center of education in the region with the help of investments from large international organizations.',
@@ -20,7 +22,7 @@ function Cyprus() {
             Studying in Cyprus may be interesting for many students, as in addition to the well-ranked universities in the country, the cost of studying in Cyprus is also very reasonable. Cyprus provides a great opportunity for students to study in different fields such as finance, art, music, and medical and paramedical fields. One of the most important things that make studying in Cyprus ideal for many students is the possibility of studying medicine entrance exam to be accepted in this field.
             </p>
         </div>
-        <img src='' alt="France" className='object-contain lg:max-w-lg rounded-lg' />
+        <img src={Img2} alt="France" className='object-contain lg:max-w-lg rounded-lg' />
     </div>
     <div class='flex gap-6 flex-col lg:flex-row justify-center py-4'>
     <div>
@@ -31,7 +33,7 @@ function Cyprus() {
     <img src={Img1} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
 </div>
 <div class='flex gap-6 flex-col-reverse lg:flex-row py-4 justify-center '>
-    <img src='' alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
+    <img src={Img3} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
     <div>
         <h2 class='text-lg md:text-2xl font-medium'>{country} SYSTEM OF EDUCATION</h2>
         <p class='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>

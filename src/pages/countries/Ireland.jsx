@@ -5,7 +5,8 @@ import Footer from '../../components/Footer';
 import Img1 from '../../assets/SideAttractions/Ireland2.jpg';
 import Primary from '../../assets/Primary.jpg';
 import Secondary from '../../assets/Secondary.jpg';
-import Tertiary from '../../assets/Tertiary.jpg'
+import Tertiary from '../../assets/Tertiary.jpg';
+import Img2 from '../../assets/CountryStuStock/Img10.jpg';
 
 const EducationLevels = [
     {
@@ -40,7 +41,7 @@ Ireland offers the warmest of welcomes to students from all over the world. With
             </p>
             
         </div>
-        <img src='' alt="" className='object-contain lg:max-w-lg rounded-lg' />
+        <img src={Img2} alt="" className='object-contain lg:max-w-lg rounded-lg' />
     </div>
 <div class='flex gap-6 flex-col-reverse lg:flex-row justify-center'>
     <img src={Img1} alt="" className='object-contain lg:max-w-lg rounded-lg' />

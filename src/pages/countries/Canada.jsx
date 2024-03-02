@@ -2,8 +2,9 @@ import React from 'react';
 import Information from '../../components/Information';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import Img1 from '../../assets/SideAttractions/Canada1.jpg';
+import Img1 from '../../assets/CountryStuStock/Img15.jpg';
 import Img2 from '../../assets/SideAttractions/Canada2.jpg';
+import Img3 from '../../assets/CountryStuStock/Img16.jpg';
 
 const QuickFacts = [
     'Canada Is a Wonderful Place to Live and Study. Since 2004, the United Nations has regularly ranked Canada highly in its Quality of Life Index',
@@ -21,7 +22,7 @@ const country = 'CANADA';
 
 function Canada() {
     const largeContent = <>
-    <div class='flex gap-6 py-4 flex-col lg:flex-row lg:items-center'>
+    <div class='flex gap-6 py-4 flex-col lg:flex-row justify-center'>
         <div class=''>
             <h2 class='text-lg md:text-2xl font-medium'>WHY {country}?</h2>
             <p class='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
@@ -31,7 +32,7 @@ function Canada() {
         </div>
         <img src={Img1} alt="France" className='object-contain lg:max-w-lg rounded-lg' />
     </div>
-<div class='flex gap-6 flex-col-reverse lg:flex-row items-start'>
+<div class='flex gap-6 flex-col-reverse lg:flex-row justify-center py-4'>
     <img src={Img2} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
     <div>
         <h2 class='text-lg md:text-2xl font-medium'>{country} SYSTEM OF EDUCATION</h2>
@@ -40,6 +41,37 @@ function Canada() {
         </p>
     </div>
 </div>
+<div class='flex gap-6 flex-col lg:flex-row justify-center py-4'>
+    <div>
+        <h2 class='text-lg md:text-2xl font-medium'>YEARLY TUITION COST</h2>
+        <p className='max-w-lg mx-auto mt-4 text-base font-medium leading-relaxed text-gray-700'>
+        Approximate yearly cost of full-time tuition in Canada for international students (CAD):
+        </p>
+        <p class="mt-4 text-base leading-relaxed text-gray-600 max-w-lg">
+        •	K-12 (public): $9,500 to $17,000
+        </p>
+        <p class="mt-4 text-base leading-relaxed text-gray-600 max-w-lg">
+        •	K-12 (independent/private): $45,000 – $75,000
+        </p>
+        <p class="mt-4 text-base leading-relaxed text-gray-600 max-w-lg">
+        •	Language: $15,400 (based on 44 weeks per year, $350/week average)
+        </p>
+        <p class="mt-4 text-base leading-relaxed text-gray-600 max-w-lg">
+        •	College: $7,000 to $30,000 depending on institution and field of study
+        </p>
+        <p class="mt-4 text-base leading-relaxed text-gray-600 max-w-lg">
+        •	University: depending on level and field of study (Statistics Canada)
+        </p>
+        <p class="mt-4 text-base leading-relaxed text-gray-600 max-w-lg">
+        •	Undergraduate – $10,703 to $60,150 (Statistics Canada 2020/21)
+        </p>
+        <p class="mt-4 text-base leading-relaxed text-gray-600 max-w-lg">
+        •	Graduate – $3,222 to $42,710 (Statistics Canada 2020/21)
+        </p>
+    </div>
+    <img src={Img3} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
+</div>
+
 <section class="relative py-10 overflow-hidden bg-primary sm:py-16 lg:py-24 rounded-xl">
 
     <div class="relative max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">

@@ -37,7 +37,7 @@ function App() {
           <Route path='/cyprus' element={<Cyprus/>}/>
           <Route path='/germany' element={<Germany/>}/>
           <Route path='/usa' element={<US/>}/>
-          <Route path='/nethetlands' element={<Netherlands/>}/>
+          <Route path='/netherlands' element={<Netherlands/>}/>
         <Route path='/jobs' element={<Jobs/>}/>
         <Route path='/programmes' element={<Programmes/>}/>
         <Route path='/services' element={<Services/>}/>

@@ -2,7 +2,9 @@ import React from 'react';
 import Information from '../../components/Information';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import Img1 from '../../assets/SideAttractions/US2.jpg'
+import Img1 from '../../assets/SideAttractions/US2.jpg';
+import Img2 from '../../assets/CountryStuStock/Img17.jpg';
+import Img3 from '../../assets/CountryStuStock/Img2.jpg';
 
 
 const QuickFacts = [
@@ -20,10 +22,25 @@ function US() {
         <div>
             <h2 class='text-lg md:text-2xl font-medium'>WHY {country}?</h2>
             <p class='max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600'>
-            The United States of America, or the USA, has emerged as a popular hotspot among students worldwide for studying abroad. With numerous top-ranking Universities, the country hosts over a million international students yearly for their study abroad in US college plans. There are many reasons why studying in the USA for international students is a better alternative.
+            The United States of America, or the USA, has emerged as a popular hotspot among students worldwide for studying abroad. With numerous top-ranking Universities, the country hosts over a million international students yearly for their study abroad in US college plans. There are many reasons why studying in the USA for international students is a better alternative. Here are a few of them:
+            </p>
+            <p class="text-base leading-relaxed text-gray-800 font-semibold max-w-lg"> 
+                •	Historical Backdrop
+            </p>
+            <p class=" text-base leading-relaxed text-gray-800 font-semibold max-w-lg"> 
+                •	Social Development
+            </p>
+            <p class=" text-base leading-relaxed text-gray-800 font-semibold max-w-lg"> 
+                •	Diversity
+            </p>
+            <p class=" text-base leading-relaxed text-gray-800 font-semibold max-w-lg"> 
+                •	Hi-Tech Country
+            </p>
+            <p class=" text-base leading-relaxed text-gray-800 font-semibold max-w-lg"> 
+                •	Economic Dominance
             </p>
         </div>
-        <img src='' alt="France" className='object-contain lg:max-w-lg rounded-lg' />
+        <img src={Img2} alt="France" className='object-contain lg:max-w-lg rounded-lg' />
     </div>
     <div class='flex gap-6 flex-col-reverse lg:flex-row py-4 justify-center '>
     <img src={Img1} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
@@ -58,7 +75,7 @@ function US() {
         <span className='text-gray-800 font-medium'>The USA is a Safe Study Abroad Destination:</span> The United States of America is recognized as one of the best study-abroad destinations for global aspirants. It also offers a safe working and study environment for the students. Strict regulations are applied to every aspect, which the candidates must comply with to settle in quickly. Apart from significant authorities, there are also proper guidelines on student conduct that should be followed. Most university campuses have their security teams to ensure inclusive student safety.
         </p>
     </div>
-    <img src='' alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
+    <img src={Img3} alt="France Flag" className='object-contain lg:max-w-lg rounded-lg' />
 </div>
 <section class="relative py-10 overflow-hidden bg-primary sm:py-16 lg:py-24 rounded-xl">
     <div class="relative max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
