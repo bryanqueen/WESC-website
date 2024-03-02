@@ -9,7 +9,7 @@ import {BiX} from 'react-icons/bi'
 import {useState, useEffect} from 'react'
 
 const NavItems = [
-    {name: 'Blogs', path: '/blogs'},
+    // {name: 'Blogs', path: '/blogs'},
     {name: 'About', path: '/about-us'},
     {name: 'Our Services', path: '/services'},
     {name: 'Our Coverage', path: '/coverage'},
