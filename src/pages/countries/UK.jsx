@@ -5,6 +5,9 @@ import Footer from '../../components/Footer';
 import Img1 from '../../assets/CountryStuStock/Img3.jpg';
 import Img2 from '../../assets/SideAttractions/UK2.jpg';
 import Img3 from '../../assets/CountryStuStock/Img4.jpg';
+import Img4 from '../../assets/CountryStuStock/Img5.jpg';
+import Img5 from '../../assets/CountryStuStock/Img17.jpg';
+import { ImageGrid } from '../../components/ImageGrid';
 
 const QuickFacts = [
     'High Quality Education',
@@ -53,7 +56,7 @@ function UK() {
 <section class="relative py-10 overflow-hidden bg-primary sm:py-16 lg:py-24 rounded-xl">
     <div class="relative max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">HERE ARE SOME QUICK FACTS ABOUT <span className='text-orange'>{country}</span></h2>
-        <div class="grid items-end grid-cols-1 gap-y-10  md:gap-x-20">
+        <div class="grid items-end grid-cols-1 md:grid-cols-2 gap-y-10  md:gap-x-20">
             <div>
                 <ul class="mt-12 space-y-4 md:mt-20">
                     {QuickFacts.map((facts, idx) => (
@@ -69,6 +72,7 @@ function UK() {
 
                 </ul>
             </div>
+            <ImageGrid Img1={Img4} Img2={Img5}/>
         </div>
     </div>
 </section>

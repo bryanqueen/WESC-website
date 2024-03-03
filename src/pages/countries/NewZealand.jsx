@@ -5,6 +5,9 @@ import Footer from '../../components/Footer';
 import Img1 from '../../assets/CountryStuStock/Img13.jpg';
 import Img2 from '../../assets/SideAttractions/NZealand2.jpg';
 import Img3 from '../../assets/CountryStuStock/Img14.jpg';
+import Img4 from '../../assets/CountryStuStock/Img7.jpg';
+import Img5 from '../../assets/CountryStuStock/Img6.jpg';
+import { ImageGrid } from '../../components/ImageGrid';
 
 
 const QuickFacts = [
@@ -69,7 +72,7 @@ The New Zealand Qualifications Framework (NZQF) is a system for acknowledging th
 </div>
 <section class="relative py-10 overflow-hidden bg-primary sm:py-16 lg:py-24 rounded-xl">
     <div class="relative max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
-        <div class="grid items-end grid-cols-1 gap-y-10  md:gap-x-20">
+        <div class="grid items-end grid-cols-1 md:grid-cols-2 gap-y-10  md:gap-x-20">
             <div>
                 <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">HERE ARE SOME QUICK FACTS ABOUT <span className='text-orange'>{country}</span></h2>
                 <ul class="mt-12 space-y-4 md:mt-20">
@@ -83,11 +86,9 @@ The New Zealand Qualifications Framework (NZQF) is a system for acknowledging th
                          <p class=" text-base leading-relaxed text-blue-100">{facts}</p>
                      </li>
                     ))}
-
                 </ul>
             </div>
-
-            
+            <ImageGrid Img1={Img4} Img2={Img5}/>
         </div>
     </div>
 </section>

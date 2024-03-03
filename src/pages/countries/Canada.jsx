@@ -5,6 +5,10 @@ import Footer from '../../components/Footer';
 import Img1 from '../../assets/CountryStuStock/Img15.jpg';
 import Img2 from '../../assets/SideAttractions/Canada2.jpg';
 import Img3 from '../../assets/CountryStuStock/Img16.jpg';
+import Img4 from '../../assets/CountryStuStock/Img12.jpg';
+import Img5 from '../../assets/CountryStuStock/Img11.jpg';
+import { ImageGrid } from '../../components/ImageGrid';
+
 
 const QuickFacts = [
     'Canada Is a Wonderful Place to Live and Study. Since 2004, the United Nations has regularly ranked Canada highly in its Quality of Life Index',
@@ -75,9 +79,9 @@ function Canada() {
 <section class="relative py-10 overflow-hidden bg-primary sm:py-16 lg:py-24 rounded-xl">
 
     <div class="relative max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
-        <div class="grid items-end grid-cols-1 gap-y-10  md:gap-x-20">
-            <div>
                 <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">HERE ARE SOME QUICK FACTS ABOUT <span className='text-orange'>{country}</span></h2>
+        <div class="grid  grid-cols-1 md:grid-cols-2 gap-y-10  md:gap-x-20 items-center">
+            <div>
                 <ul class="mt-12 space-y-4 md:mt-20">
                     {QuickFacts.map((facts, idx) => (
                          <li key={idx} class="flex items-start space-x-3">
@@ -92,8 +96,7 @@ function Canada() {
 
                 </ul>
             </div>
-
-            
+            <ImageGrid Img1={Img4} Img2={Img5}/>.
         </div>
     </div>
 </section>

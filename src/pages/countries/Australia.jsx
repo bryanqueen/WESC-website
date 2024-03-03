@@ -5,6 +5,9 @@ import Footer from '../../components/Footer';
 import Img1 from '../../assets/SideAttractions/Australia2.jpg';
 import Img2 from '../../assets/CountryStuStock/Img3.jpg';
 import Img3 from '../../assets/CountryStuStock/Img2.jpg';
+import Img4 from '../../assets/CountryStuStock/Img17.jpg';
+import Img5 from '../../assets/CountryStuStock/Img16.jpg';
+import { ImageGrid } from '../../components/ImageGrid';
 const QuickFacts = [
     'University Rankings And Reputation',
     'Wide Range of Courses And Subjects',
@@ -72,7 +75,7 @@ Australia has many top-ranked universities in the world. The universities provid
 
                 </ul>
             </div>
-
+            <ImageGrid Img1={Img4} Img2={Img5}/>
             
         </div>
     </div>
