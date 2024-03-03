@@ -72,9 +72,9 @@ The New Zealand Qualifications Framework (NZQF) is a system for acknowledging th
 </div>
 <section class="relative py-10 overflow-hidden bg-primary sm:py-16 lg:py-24 rounded-xl">
     <div class="relative max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">HERE ARE SOME QUICK FACTS ABOUT <span className='text-orange'>{country}</span></h2>
         <div class="grid items-end grid-cols-1 md:grid-cols-2 gap-y-10  md:gap-x-20">
             <div>
-                <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">HERE ARE SOME QUICK FACTS ABOUT <span className='text-orange'>{country}</span></h2>
                 <ul class="mt-12 space-y-4 md:mt-20">
                     {QuickFacts.map((facts, idx) => (
                          <li key={idx} class="flex items-start space-x-3">
