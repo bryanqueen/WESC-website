@@ -5,7 +5,8 @@ import HeroImg3 from '../assets/img13.jpg';
 import HeroImg4 from '../assets/img3.jpg';
 import Logo from '../assets/Logo.png';
 import { HiMenuAlt1 } from "react-icons/hi";
-import {BiX} from 'react-icons/bi'
+import {BiX} from 'react-icons/bi';
+import { FaWhatsapp } from "react-icons/fa";
 import {useState, useEffect} from 'react'
 
 const NavItems = [
@@ -14,7 +15,7 @@ const NavItems = [
     {name: 'Our Services', path: '/services'},
     {name: 'Our Coverage', path: '/coverage'},
     // {name: 'Programmes', path: '/programmes'},
-    {name: 'Jobs', path: '/jobs'},
+    {name: 'Become an agent', path: '/jobs'},
     {name: 'Apply', path: '/apply'}
 ]
 
@@ -82,9 +83,15 @@ function Hero() {
         <div className='grid grid-cols-1 md:grid-cols-2 justify-center items-center'>
             <div className='flex flex-col gap-12 md:gap-10 lg:gap-8'>
         <h1 class="mt-20 text-4xl font-bold text-secondary lg:text-6xl">{currentData.text}</h1>
-        <a href="/apply" className='px-4 py-2 bg-orange w-full lg:w-44 text-xl font-bold text-gray-800 hover:bg-orange/80 items-center flex justify-center rounded-md'>
+        <div className='flex flex-col gap-4 md:flex-row lg:w-full '>
+        <a href="/apply" className='px-4 py-2 bg-orange w-full lg:w-56 text-xl font-bold text-gray-800 hover:bg-orange/80 items-center flex justify-center rounded-md'>
             Apply Now
         </a>
+        <a href="https://wa.me/+2349160085447" className='px-4 py-2 bg-[#25d366] hover:bg-[#25d366]/80 text-white gap-1.5 text-xl font-bold text-gray-800 items-center flex justify-center rounded-md'>
+                <FaWhatsapp className='w-7 h-7'/>
+                <span>Talk to a consultant</span>
+        </a>
+        </div>
             </div>
       
         </div>
