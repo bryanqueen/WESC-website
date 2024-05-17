@@ -5,7 +5,7 @@ import useDocumentTitle from '@rehooks/document-title';
 import Img1 from '../assets/img17.jpg';
 import Img2 from '../assets/img5.jpg';
 import Img3 from '../assets/img14.jpg'
-import Olawale from '../assets/Teams/Olawale.jpg';
+import Olawale from '../assets/Teams/Olawale.png';
 import Ese from '../assets/Teams/Ese.jpg';
 import Charles from '../assets/Teams/Charles.jpg';
 import Daniel from '../assets/Teams/Daniel.jpg';
