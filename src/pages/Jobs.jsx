@@ -17,7 +17,7 @@ function Jobs(props) {
                         <p className="text-3xl font-bold leading-tight max-w-xl text-gray-600 sm:text-4xl lg:text-5xl py-6">
                             Sign Up as a WESC agent today and earn commissions from your referrals.....
                         </p>
-                        <a href="" className='px-4 py-2 bg-orange w-full lg:w-72 text-xl font-bold text-gray-800 hover:bg-orange/80 items-center flex justify-center rounded-md'>
+                        <a href="https://forms.gle/9JgbmfnbdhsE8N5v6" className='px-4 py-2 bg-orange w-full lg:w-72 text-xl font-bold text-gray-800 hover:bg-orange/80 items-center flex justify-center rounded-md'>
                         Become an Agent
                     </a>
                     </div>
